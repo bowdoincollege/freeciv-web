@@ -5,24 +5,26 @@ rulesetdir multiplayer
 set topology WRAPX
 set nationset all
 set compresstype xz
-set maxplayers 300
+set maxplayers 50
 set startunits=ccwwwx
-set aifill 300
+set aifill 50
 set allowtake=""
 set autotoggle disabled
-set timeout 82800
-set unitwaittime=36000
+#set timeout 82800
+set timeout 3600
+#set unitwaittime=36000
+set unitwaittime 1300
 set netwait 20
 set nettimeout 120
 set pingtime 30
 set pingtimeout 240
-set maxconnectionsperhost 500
+set maxconnectionsperhost 50
 set threaded_save enabled
 set scorelog enabled
 set mapsize FULLSIZE
-set size 32
+set size 20
 set landm 82
-set dispersion=1
+set dispersion=2
 
 set endt 365
 
@@ -32,13 +34,17 @@ set contactturns=0
 set minp 0
 set generator RANDOM
 set saveturns=1
-set autosaves=TURN
+# save when no players connected
+#set autosaves=QUITIDLE
+# save every 15 minutes
+set autosaves=TIMER
+set savefrequency=15
 metaconnection persistent
 set ec_chat=enabled
 set ec_info=enabled 
 set ec_max_size=5000
 set ec_turns=9
-metamessage LongTurn Game #8 | 1 turn per day | 300 players | 30000 tiles | Join now!
+metamessage HIST2014 Fall 2019 LongTurn Game | 1 turn per day | 50 players
 
-
+load /var/lib/tomcat8/webapps/data/savegames/lt/longturn_6003/freeciv-timer.sav.xz
 cmdlevel basic

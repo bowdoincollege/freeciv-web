@@ -138,16 +138,16 @@
 					aria-controls="single-player" role="tab" data-toggle="tab">Single-player (${singlePlayerGames})</a></li>
 				<li role="presentation" class="${view == 'multiplayer' ? 'active' : ''}"><a href="#multi-player-tab"
 					aria-controls="multi-player" role="tab" data-toggle="tab">Multiplayer (${multiPlayerGames})</a></li>
-				<li role="presentation" class="${view == 'play-by-email' ? 'active' : ''}"><a href="#play-by-email-tab"
-					aria-controls="play-by-email" role="tab" data-toggle="tab">Play-By-Email</a></li>
+				<!-- li role="presentation" class="${view == 'play-by-email' ? 'active' : ''}"><a href="#play-by-email-tab"
+					aria-controls="play-by-email" role="tab" data-toggle="tab">Play-By-Email</a></li -->
 			</ul>
 			<ul class="nav nav-tabs hidden-lg hidden-md hidden-sm" role="tablist">
 				<li role="presentation" class="${view == 'singleplayer' or empty view ? 'active' : ''}"><a href="#single-player-tab"
 					aria-controls="single-player" role="tab" data-toggle="tab">Single (${singlePlayerGames})</a></li>
 				<li role="presentation" class="${view == 'multiplayer' ? 'active' : ''}"><a href="#multi-player-tab"
 					aria-controls="multi-player" role="tab" data-toggle="tab">Multi (${multiPlayerGames})</a></li>
-				<li role="presentation" class="${view == 'play-by-email' ? 'active' : ''}"><a href="#play-by-email-tab"
-					aria-controls="play-by-email" role="tab" data-toggle="tab">Play-By-Email</a></li>
+				<!-- li role="presentation" class="${view == 'play-by-email' ? 'active' : ''}"><a href="#play-by-email-tab"
+					aria-controls="play-by-email" role="tab" data-toggle="tab">Play-By-Email</a></li -->
 			</ul>
 
 			<div class="tab-content">
@@ -258,7 +258,7 @@
 					</c:if>
 				</div>
 	
-				<div role="tabpanel" class="tab-pane ${view == 'play-by-email' ? 'active' : ''}" id="play-by-email-tab">
+				<!-- div role="tabpanel" class="tab-pane ${view == 'play-by-email' ? 'active' : ''}" id="play-by-email-tab">
 					<div class="row">
 						<div class="col-md-12">
 							<p>
@@ -313,7 +313,7 @@
 							</table>
 						</div>
 					</div>
-				</div>
+				</div -->
 			</div>
 		</div>
 

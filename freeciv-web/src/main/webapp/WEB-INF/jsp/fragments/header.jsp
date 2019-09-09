@@ -10,7 +10,8 @@
 		</button>
 		<a class="navbar-brand" href="/">
 			<!--Logo font is: Liberation Sans Bold Italic -->
-			<img src="/static/images/brand.png" alt="Freeciv-web">
+			FreeCiv Web
+			<!-- img src="/static/images/brand.png" alt="Freeciv-web" -->
 		</a>
 		</div>
 
@@ -25,11 +26,11 @@
 				<ul class="dropdown-menu">
 					<li><a href="/game/list?v=singleplayer">Single-player</a></li>
 					<li role="separator" class="divider"></li>
-					<li><a href="/game/list?v=multiplayer">Multiplayer</a></li>
-					<li role="separator" class="divider"></li>
+					<!-- li><a href="/game/list?v=multiplayer">Multiplayer</a></li>
+					<li role="separator" class="divider"></li -->
 					<li><a href="/game/list?v=multiplayer">One Turn per Day</a></li>
 					<li role="separator" class="divider"></li>
-					<li><a href="/game/list?v=play-by-email">Play by Email</a></li>
+					<!-- li><a href="/game/list?v=play-by-email">Play by Email</a></li -->
 				</ul>
 			</li>
 			<li class="dropdown">
@@ -42,7 +43,7 @@
 					<li><a href="https://www.reddit.com/r/freeciv">reddit.com/freeciv</a></li>
 				</ul>
 			</li>
-			<li><a href="http://www.freeciv.org/donate.html"><fmt:message key="nav-donate"/></a></li>
+			<!-- li><a href="http://www.freeciv.org/donate.html"><fmt:message key="nav-donate"/></a></li -->
 			<li><a href="https://github.com/freeciv/freeciv-web">Contribute</a></li>
 			<%--<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="${pageContext.request.locale.language} ${pageContext.request.locale.country}">
