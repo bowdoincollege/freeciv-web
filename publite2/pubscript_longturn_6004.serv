@@ -1,4 +1,4 @@
-#LongTurn game for HIST 2014 Fall 2019
+#LongTurn game #8
 
 cmdlevel ctrl first
 rulesetdir multiplayer 
@@ -10,8 +10,8 @@ set startunits=ccwwwx
 set aifill 50
 set allowtake=""
 set autotoggle disabled
-set timeout 82800
-set unitwaittime 36000
+set timeout 3600
+set unitwaittime 1300
 set netwait 20
 set nettimeout 120
 set pingtime 30
@@ -32,6 +32,8 @@ set contactturns=0
 set minp 0
 set generator RANDOM
 set saveturns=1
+# save when no players connected
+#set autosaves=QUITIDLE
 # save every 15 minutes
 set autosaves=TIMER
 set savefrequency=15
@@ -41,7 +43,8 @@ set ec_info=enabled
 set ec_max_size=5000
 set ec_turns=9
 
-metamessage HIST2014 Fall 2019 LongTurn Game | 1 turn per day | 50 players
+metamessage Testing LongTurn Game (Don't use) | 1 turn per hour | 50 players
 
-#load /var/lib/tomcat8/webapps/data/savegames/lt/longturn_6003/freeciv-timer.sav.xz
+load /var/lib/tomcat8/webapps/data/savegames/lt/longturn_6004/freeciv-timer.sav.xz
+
 cmdlevel basic
